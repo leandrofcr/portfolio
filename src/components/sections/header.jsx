@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import AnchorLink from 'react-anchor-link-smooth-scroll';
 
 const StyledHeaderSection = styled.section`
   padding: 20px;
@@ -42,10 +43,10 @@ function Header() {
     <StyledHeaderSection>
       <span>LR</span>
       <nav>
-        <a href="#about">About</a>
-        <a href="#experience">Experience</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
+        <AnchorLink offset="100" href="#about">About</AnchorLink>
+        <AnchorLink offset="100" href="#experience">Experience</AnchorLink>
+        <AnchorLink offset="100" href="#projects">Projects</AnchorLink>
+        <AnchorLink offset="100" href="#contact">Contact</AnchorLink>
       </nav>
     </StyledHeaderSection>
   );
