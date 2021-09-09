@@ -2,12 +2,27 @@ import React, { useEffect } from 'react';
 import styled from 'styled-components';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
+import { HiOutlineExternalLink } from 'react-icons/hi';
 import projects from '../../content/projects';
 
 const StyledSectionWrapper = styled.section`
   width: 80vw;
   text-align: center;
   margin: 50vh 0;
+  
+  a {
+    text-decoration: none;
+    margin: 0 10px;
+    color: #707881;
+    font-weight: 600;
+    background: linear-gradient(currentColor 0 0) 0 100% / var(--d, 0) 1px
+      no-repeat;
+    transition: 0.5s;
+    &:hover {
+      color: #efb357;
+      --d: 100%;
+    }
+  }
 `;
 
 const StyledCard = styled.section`
@@ -104,6 +119,11 @@ function Projects() {
           </div>
         </StyledCard>
       ))}
+      <a href="https://github.com/leandrofcr" target="_blank" rel="noreferrer">
+        See more
+        {' '}
+        <HiOutlineExternalLink />
+      </a>
     </StyledSectionWrapper>
   );
 }
