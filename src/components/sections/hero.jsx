@@ -47,7 +47,7 @@ const StyledHeroSection = styled.section`
     line-height: 1.5;
   }
 
-  a {
+  span a {
     text-decoration: none;
     color: #efb357;
     background: linear-gradient(currentColor 0 0) 0 100% / var(--d, 0) 1px
@@ -56,6 +56,24 @@ const StyledHeroSection = styled.section`
     &:hover {
       --d: 100%;
     }
+  }
+`;
+
+const YellowBtn = styled.a`
+  text-decoration: none;
+  margin: 40px 0;
+  background-color: #efb357;
+  color: #222a36;
+  padding: 15px 20px;
+  border-radius: 10px;
+  box-shadow: 15px 15px 25px -2px rgba(0, 0, 0, 0.5);
+  opacity: 0.9;
+  transition: transform 0.3s;
+  font-size: 1.2rem;
+
+  &:hover {
+    opacity: 1;
+    /* transform: scale(1.08); */
   }
 `;
 
@@ -84,10 +102,23 @@ function Welcome() {
         for technology made me pivot my career and seek new challenges in the
         area of software development. Currently studying web development at
         {' '}
-        <a href="https://www.betrybe.com/">Trybe</a>
+        <span>
+          <a href="https://www.betrybe.com/">Trybe</a>
+        </span>
         {' '}
         :D
       </p>
+      <div
+        data-aos="fade-up"
+        data-aos-delay="2500"
+      >
+        <YellowBtn
+          href="mailto:lleandrofr@gmail.com?subject=Olá%20Leandro%20Reis"
+
+        >
+          Get in Touch
+        </YellowBtn>
+      </div>
     </StyledHeroSection>
   );
 }
