@@ -10,6 +10,7 @@ import {
   Email,
   Footer,
 } from './components';
+import GlobalStyle from './styles/GlobalStyles';
 
 const StyledApp = styled.div`
 
@@ -31,6 +32,7 @@ const StyledApp = styled.div`
   background-color: #212935;
   color: #f5f5f5;
   margin: 0;
+  width: 100%;
 
   /* 
   #707881;
@@ -51,6 +53,7 @@ const StyledApp = styled.div`
 function App() {
   return (
     <StyledApp>
+      <GlobalStyle />
       <Header />
       <Hero />
       <About />

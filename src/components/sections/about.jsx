@@ -5,7 +5,7 @@ import 'aos/dist/aos.css';
 import { profilePic } from '../../images';
 
 const StyledAboutSection = styled.section`
-  max-width: 800px;
+  max-width: 60vw;
   min-height: 100vh;
 
   div {
@@ -26,8 +26,16 @@ const StyledAboutSection = styled.section`
     }
   }
 
-  span { 
-    color:#EFB357;
+  span {
+    color: #efb357;
+  }
+
+  @media (max-width: 925px) {
+    div {
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: center;
+    }
   }
 `;
 
@@ -55,6 +63,18 @@ const StyledPic = styled.section`
     position: relative;
   }
 
+  @media (max-width: 925px) {
+    div {
+      display: none;
+      justify-content: flex-start;
+    }
+
+    img {
+      border-radius: 50%;
+      width: 200px;
+      position: relative;
+    }
+  }
 `;
 
 const StyledList = styled.ul`
@@ -65,7 +85,16 @@ const StyledList = styled.ul`
 `;
 
 function About() {
-  const skills = ['JavaScript (ES6+)', 'React', 'Jest', 'CSS3', 'Node.js', 'MySQL', 'MongoDB', 'Express.js'];
+  const skills = [
+    'JavaScript (ES6+)',
+    'React',
+    'Jest',
+    'CSS3',
+    'Node.js',
+    'MySQL',
+    'MongoDB',
+    'Express.js',
+  ];
 
   useEffect(() => {
     Aos.init({ duration: 2000, once: true });
@@ -77,24 +106,29 @@ function About() {
       <div>
         <section>
           <p>
-            Hi! My name is Leandro and I like to create things that live on the internet.
-            My interest in web development led me in 2020 to completely change my career,
-            leaving mechanical engineering to dedicate myself completely to web development,
-            where my passion for what I do has only increased.
-
+            Hi! My name is Leandro and I like to create things that live on the
+            internet. My interest in web development led me in 2020 to
+            completely change my career, leaving mechanical engineering to
+            dedicate myself completely to web development, where my passion for
+            what I do has only increased.
           </p>
 
           <p>
-            I&apos;m currently delving a little deeper into the back end at Trybe,
-            where I have the privilege to carry out several front end and back end projects.
-            Always using very current technologies. My main focus these days is to
+            I&apos;m currently delving a little deeper into the back end at
+            Trybe, where I have the privilege to carry out several front end and
+            back end projects. Always using very current technologies. My main
+            focus these days is to
             {' '}
             <span>find a job</span>
             {' '}
-            where I can further develop these skills and start my web developer career.
+            where I can further
+            develop these skills and start my web developer career.
           </p>
 
-          <p>Here are a few technologies I&apos;ve been working with recently: </p>
+          <p>
+            Here are a few technologies I&apos;ve been working with recently:
+            {' '}
+          </p>
 
           <StyledList>
             {skills && skills.map((skill) => <li key={skill}>{skill}</li>)}

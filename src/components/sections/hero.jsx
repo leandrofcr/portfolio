@@ -13,27 +13,26 @@ const StyledHeroSection = styled.section`
   min-height: 100vh;
   margin: 0;
   padding: 0;
-  width: 800px;
+  width: 60vw;
 
   span {
-    color:#3bafca;
-    background: 
-      linear-gradient(currentColor 0 0) 0 100% /var(--d, 0) 1px no-repeat;
-      transition:0.5s;
-      &:hover {
-        --d: 100%;
-      }  
+    color: #3bafca;
+    background: linear-gradient(currentColor 0 0) 0 100% / var(--d, 0) 1px
+      no-repeat;
+    transition: 0.5s;
+    &:hover {
+      --d: 100%;
+    }
   }
 
   div {
     margin: 0;
     padding: 0;
-  };
+  }
 
   h1 {
     font-size: 0.5em;
-    
-  };
+  }
 
   h2 {
     font-size: 1.5em;
@@ -47,16 +46,16 @@ const StyledHeroSection = styled.section`
     text-align: start;
     line-height: 1.5;
   }
-  
+
   a {
-    text-decoration:none;
-    color: #EFB357;
-    background: 
-      linear-gradient(currentColor 0 0) 0 100% /var(--d, 0) 1px no-repeat;
-      transition:0.5s;
-      &:hover {
-        --d: 100%;
-      }  
+    text-decoration: none;
+    color: #efb357;
+    background: linear-gradient(currentColor 0 0) 0 100% / var(--d, 0) 1px
+      no-repeat;
+    transition: 0.5s;
+    &:hover {
+      --d: 100%;
+    }
   }
 `;
 
@@ -71,10 +70,7 @@ function Welcome() {
         <h1 data-aos="fade-up">Hi there!</h1>
       </div>
 
-      <div
-        data-aos="fade-up"
-        data-aos-delay="1000"
-      >
+      <div data-aos="fade-up" data-aos-delay="1000">
         <h2>
           I&apos;m
           {' '}
@@ -82,20 +78,16 @@ function Welcome() {
         </h2>
       </div>
 
-      <p
-        data-aos="fade-up"
-        data-aos-delay="1600"
-      >
-        Software development student, excited about programming since I got my first computer.
-        Graduated in Mechanical Engineering, where my passion for technology made me pivot my
-        career and seek new challenges in the area of software development.
-        Currently studying web development at
+      <p data-aos="fade-up" data-aos-delay="1600">
+        Software development student, excited about programming since I got my
+        first computer. Graduated in Mechanical Engineering, where my passion
+        for technology made me pivot my career and seek new challenges in the
+        area of software development. Currently studying web development at
         {' '}
         <a href="https://www.betrybe.com/">Trybe</a>
         {' '}
         :D
       </p>
-
     </StyledHeroSection>
   );
 }
