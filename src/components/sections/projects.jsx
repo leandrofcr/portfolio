@@ -52,7 +52,7 @@ const StyledCard = styled.section`
     }
   }
 
-  div {
+  section {
     position: relative;
     width: 700px;
     right: 50px;
@@ -86,7 +86,7 @@ const StyledCard = styled.section`
     flex-direction: column;
     align-items: center;
 
-    div {
+    section {
       position: unset;
       width: 60%;
     }
@@ -108,15 +108,17 @@ function Projects() {
           data-aos-delay={i === 0 ? 0 : i * 100}
         >
           <img src={pr.image} alt={` The ${pr.name} project`} />
-          <div>
+          <section>
             {pr.name}
             <p>
               {pr.description}
-              {pr.tags.map((tg) => (
-                <code key={tg}>{tg}</code>
-              ))}
+              <div>
+                {pr.tags.map((tg) => (
+                  <code key={tg}>{tg}</code>
+                ))}
+              </div>
             </p>
-          </div>
+          </section>
         </StyledCard>
       ))}
       <a href="https://github.com/leandrofcr" target="_blank" rel="noreferrer">
