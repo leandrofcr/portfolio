@@ -33,6 +33,8 @@ const StyledApp = styled.div`
   color: #f5f5f5;
   margin: 0;
   width: 100%;
+  scrollbar-color: red yellow;
+
 
   /* 
   #707881;
