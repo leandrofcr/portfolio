@@ -26,16 +26,34 @@ const StyledAboutSection = styled.section`
     }
   }
 
+  p {
+      text-align:justify;
+    }
+
   span {
     color: #efb357;
   }
+ 
+  @media (max-width: 1100px) {
+    margin-top: 200px;
 
-  @media (max-width: 925px) {
     div {
       display: flex;
       flex-direction: column-reverse;
       align-items: center;
     }
+
+    p {
+      text-align:justify;
+      min-width: 75vw;
+      margin-left: 50px;
+    }
+
+    section {
+      display: flex;
+      flex-flow: column wrap;
+      align-items: center;
+  }
   }
 `;
 
@@ -63,7 +81,7 @@ const StyledPic = styled.section`
     position: relative;
   }
 
-  @media (max-width: 925px) {
+  @media (max-width: 1100px) {
     div {
       display: none;
       justify-content: flex-start;
@@ -82,6 +100,11 @@ const StyledList = styled.ul`
   -webkit-columns: 2;
   -moz-columns: 2;
   min-height: 0;
+  @media (max-width: 1100px){
+    li {
+      margin-left: 50px;
+    }
+  }
 `;
 
 function About() {

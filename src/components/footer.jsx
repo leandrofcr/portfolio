@@ -5,6 +5,7 @@ const FooterWrapper = styled.footer`
     font-size: 12px;
     color: #707881;
     padding: 20px;
+    margin-top: 100px;
 
     a {
       text-decoration: none;
