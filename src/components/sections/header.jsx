@@ -5,9 +5,9 @@ import AnchorLink from 'react-anchor-link-smooth-scroll';
 const StyledHeaderSection = styled.section`
   padding: 20px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
-  width: 90vw;
+  width: 100vw;
   position: fixed;
   background-color: #212935;
   z-index: 2;
@@ -33,7 +33,7 @@ const StyledHeaderSection = styled.section`
     }
   }
 
-  @media (max-width: 925px) {
+  @media (max-width: 1100px) {
     justify-content: center;
   }
 `;

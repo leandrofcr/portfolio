@@ -14,7 +14,8 @@ const StyledContactSection = styled.section`
   height: 80vh;
 
   p {
-    width: 80%;
+    width: 80vw;
+    margin-left: 50px;
   }
 `;
 

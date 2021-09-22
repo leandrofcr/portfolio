@@ -4,14 +4,13 @@ import Aos from 'aos';
 import 'aos/dist/aos.css';
 
 const StyledHeroSection = styled.section`
-  margin-top: 100px;
   display: flex;
   align-items: flex-start;
   flex-flow: column wrap;
   justify-content: center;
   font-size: 60px;
   min-height: 100vh;
-  margin: 0;
+  margin: 30px 0;
   padding: 0;
   width: 60vw;
 
@@ -42,6 +41,7 @@ const StyledHeroSection = styled.section`
   p {
     margin-top: 30px;
     font-size: 18px;
+    min-width: 300px;
     max-width: 600px;
     text-align: start;
     line-height: 1.5;
@@ -57,6 +57,22 @@ const StyledHeroSection = styled.section`
       --d: 100%;
     }
   }
+
+  @media (max-width: 1100px ){
+
+    margin-top: 100px;
+
+    h2 {
+      font-size: 1em;
+    }
+
+    section {
+      margin-top: auto;
+    }
+
+    
+  }
+
 `;
 
 const YellowBtn = styled.a`
@@ -74,6 +90,11 @@ const YellowBtn = styled.a`
   &:hover {
     opacity: 1;
     /* transform: scale(1.08); */
+  }
+
+  @media (max-width: 1100px) {
+    padding: 10px 12px;
+    border-radius: 7px;
   }
 `;
 

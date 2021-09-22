@@ -35,13 +35,15 @@ const StyledCard = styled.section`
     div {
       right: -50px;
     }
-    @media (max-width: 925px) {
+    @media (max-width: 1024px) {
       flex-direction: column;
+      align-items: center;
+      margin-top: 50px
     }
   }
 
   img {
-    width: 400px;
+    max-width: 400px;
     margin: 20px;
     border-radius: 10px;
     box-shadow: 15px 15px 25px -2px rgba(0, 0, 0, 0.5);
@@ -50,12 +52,14 @@ const StyledCard = styled.section`
       transform: scale(1.1);
       z-index: 2;
     }
+    @media (max-width: 576px) {
+      width: 300px;
+    }
   }
 
   section {
     position: relative;
-    width: 700px;
-    right: 50px;
+    min-width: 300px;
     text-align: left;
     padding: 5px 20px;
     border-radius: 5px;
@@ -79,16 +83,19 @@ const StyledCard = styled.section`
   }
 
   p {
-    min-width: 400px;
+    /* min-width: 400px; */
+    padding: 0 5px;
+    text-align:justify;
   }
 
-  @media (max-width: 925px) {
+  @media (max-width: 1024px) {
     flex-direction: column;
     align-items: center;
+    margin-top: 50px;
 
     section {
       position: unset;
-      width: 60%;
+      width: 60vw;
     }
   }
 `;

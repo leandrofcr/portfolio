@@ -43,16 +43,34 @@ const StyleExpSection = styled.section`
   a {
     text-decoration: none;
   }
+
+  @media (max-width: 1100px) {
+    margin-top: 200px;
+  }
+
+  @media (max-width: 780px) {
+    flex-direction: column;
+    align-items: center;
+  }
+
 `;
 
 const StyledDiv = styled.div`
   display: flex;
   flex-flow: column wrap;
-  max-width: 400px;
-  margin: 15px;
+  width: 60vh;
+  margin: 30px;
 
   li {
     margin: 15px 0;
+  }
+
+  @media (max-width: 780px) {
+      margin-left: 50px;
+      width: 60vw;
+      ul, p {
+        width: 70vw;
+      }
   }
 `;
 
@@ -64,8 +82,8 @@ function Experience() {
   return (
     <StyleExpSection>
       <section data-aos="fade-right" id="experience">
-        <h2>Where I&apos;ve Worked</h2>
         <StyledDiv>
+          <h2>Where I&apos;ve Worked</h2>
           {jobs.map((el) => (
             <>
               <a href={el.url} target="_blank" rel="noreferrer">
@@ -84,8 +102,8 @@ function Experience() {
       </section>
       <hr />
       <section data-aos="fade-left">
-        <h2>Where I&apos;ve Studied</h2>
         <StyledDiv>
+          <h2>Where I&apos;ve Studied</h2>
           {studies.map((el) => (
             <>
               <a href={el.url} target="_blank" rel="noreferrer">
