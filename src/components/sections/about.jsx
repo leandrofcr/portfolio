@@ -5,6 +5,10 @@ import 'aos/dist/aos.css';
 import { profilePic } from '../../images';
 
 const StyledAboutSection = styled.section`
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+
   max-width: 60vw;
   min-height: 100vh;
 
@@ -19,7 +23,7 @@ const StyledAboutSection = styled.section`
     &:after {
       content: "";
       display: block;
-      width: 300px;
+      width: 50vw;
       height: 1px;
       background: grey;
       margin-left: 15px;
@@ -27,15 +31,17 @@ const StyledAboutSection = styled.section`
   }
 
   p {
-      text-align:justify;
-    }
+    text-align: justify;
+    max-width: 90vw;
+  }
 
   span {
     color: #efb357;
   }
- 
+
   @media (max-width: 1100px) {
     margin-top: 200px;
+    max-width: 90vw;
 
     div {
       display: flex;
@@ -43,17 +49,11 @@ const StyledAboutSection = styled.section`
       align-items: center;
     }
 
-    p {
-      text-align:justify;
-      min-width: 75vw;
-      margin-left: 50px;
-    }
-
     section {
       display: flex;
       flex-flow: column wrap;
       align-items: center;
-  }
+    }
   }
 `;
 
@@ -100,9 +100,9 @@ const StyledList = styled.ul`
   -webkit-columns: 2;
   -moz-columns: 2;
   min-height: 0;
-  @media (max-width: 1100px){
+  @media (max-width: 1100px) {
     li {
-      margin-left: 50px;
+      margin: 0 10px;
     }
   }
 `;
@@ -125,6 +125,7 @@ function About() {
 
   return (
     <StyledAboutSection data-aos="fade-up" data-aos-delay="50" id="about">
+
       <h2>About Me</h2>
       <div>
         <section>

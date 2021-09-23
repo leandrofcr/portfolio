@@ -42,7 +42,7 @@ const StyledHeroSection = styled.section`
     margin-top: 30px;
     font-size: 18px;
     min-width: 300px;
-    max-width: 600px;
+    max-width: 80%;
     text-align: start;
     line-height: 1.5;
   }
@@ -58,8 +58,11 @@ const StyledHeroSection = styled.section`
     }
   }
 
-  @media (max-width: 1100px ){
+  @media (max-width: 900px) {
+    width: 80vw;
+  }
 
+  @media (max-width: 576px) {
     margin-top: 100px;
 
     h2 {
@@ -70,9 +73,10 @@ const StyledHeroSection = styled.section`
       margin-top: auto;
     }
 
-    
+    p {
+      min-width: 300px;
+    }
   }
-
 `;
 
 const YellowBtn = styled.a`
@@ -95,7 +99,7 @@ const YellowBtn = styled.a`
   @media (max-width: 1100px) {
     padding: 10px 12px;
     border-radius: 7px;
-  }
+}
 `;
 
 function Welcome() {
@@ -106,39 +110,40 @@ function Welcome() {
   return (
     <StyledHeroSection>
       <div>
-        <h1 data-aos="fade-up">Hi there!</h1>
-      </div>
+        <div>
+          <h1 data-aos="fade-up">Hi there!</h1>
+        </div>
 
-      <div data-aos="fade-up" data-aos-delay="1000">
-        <h2>
-          I&apos;m
+        <div data-aos="fade-up" data-aos-delay="1000">
+          <h2>
+            I&apos;m
+            {' '}
+            <span>Leandro Reis</span>
+          </h2>
+        </div>
+
+        <p data-aos="fade-up" data-aos-delay="1600">
+          Software development student, excited about programming since I got my
+          first computer. Graduated in Mechanical Engineering, where my passion
+          for technology made me pivot my career and seek new challenges in the
+          area of software development. Currently studying web development at
           {' '}
-          <span>Leandro Reis</span>
-        </h2>
-      </div>
-
-      <p data-aos="fade-up" data-aos-delay="1600">
-        Software development student, excited about programming since I got my
-        first computer. Graduated in Mechanical Engineering, where my passion
-        for technology made me pivot my career and seek new challenges in the
-        area of software development. Currently studying web development at
-        {' '}
-        <span>
-          <a href="https://www.betrybe.com/">Trybe</a>
-        </span>
-        {' '}
-        :D
-      </p>
-      <div
-        data-aos="fade-up"
-        data-aos-delay="2500"
-      >
-        <YellowBtn
-          href="mailto:lleandrofr@gmail.com?subject=Olá%20Leandro%20Reis"
-
+          <span>
+            <a href="https://www.betrybe.com/">Trybe</a>
+          </span>
+          {' '}
+          :D
+        </p>
+        <div
+          data-aos="fade-up"
+          data-aos-delay="2500"
         >
-          Get in Touch
-        </YellowBtn>
+          <YellowBtn
+            href="mailto:lleandrofr@gmail.com?subject=Olá%20Leandro%20Reis"
+          >
+            Get in Touch
+          </YellowBtn>
+        </div>
       </div>
     </StyledHeroSection>
   );

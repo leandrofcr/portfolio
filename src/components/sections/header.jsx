@@ -7,7 +7,7 @@ const StyledHeaderSection = styled.section`
   display: flex;
   justify-content: space-around;
   align-items: center;
-  width: 100vw;
+  width: 100%;
   position: fixed;
   background-color: #212935;
   z-index: 2;
@@ -34,7 +34,8 @@ const StyledHeaderSection = styled.section`
   }
 
   @media (max-width: 1100px) {
-    justify-content: center;
+    justify-content: space-evenly;
+    font-size: 0.8em;
   }
 `;
 

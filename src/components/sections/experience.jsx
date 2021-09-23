@@ -6,10 +6,11 @@ import jobs from '../../content/jobs';
 import studies from '../../content/studies';
 
 const StyleExpSection = styled.section`
-  width: 70vw;
+  width: 80vw;
   min-height: 100vh;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  margin-left: 80px;
 
   h2 {
     text-align: start;
@@ -25,14 +26,19 @@ const StyleExpSection = styled.section`
     }
   }
 
+  section {
+    display: flex;
+    justify-content: flex-start;
+  }
+
   h3 {
     color: #3bafca;
-    transition:0.5s;
-    background: linear-gradient(currentColor 0 0) 0 100%
-      /var(--d, 0) 1px no-repeat;
-      &:hover {
-        --d: 100%;
-      } 
+    transition: 0.5s;
+    background: linear-gradient(currentColor 0 0) 0 100% / var(--d, 0) 1px
+      no-repeat;
+    &:hover {
+      --d: 100%;
+    }
   }
 
   code {
@@ -46,31 +52,34 @@ const StyleExpSection = styled.section`
 
   @media (max-width: 1100px) {
     margin-top: 200px;
+    max-width: 100vw;
   }
 
   @media (max-width: 780px) {
     flex-direction: column;
     align-items: center;
+    margin-left: -120px;
   }
-
 `;
 
 const StyledDiv = styled.div`
   display: flex;
   flex-flow: column wrap;
-  width: 60vh;
-  margin: 30px;
+  min-width: 30vw;
+  max-width: 400px;
+  margin: 35px;
 
   li {
     margin: 15px 0;
   }
 
   @media (max-width: 780px) {
-      margin-left: 50px;
-      width: 60vw;
-      ul, p {
-        width: 70vw;
-      }
+    margin-left: 50px;
+    max-width: 50vw;
+    ul,
+    p {
+      width: 70vw;
+    }
   }
 `;
 

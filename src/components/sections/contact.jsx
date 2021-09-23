@@ -14,8 +14,12 @@ const StyledContactSection = styled.section`
   height: 80vh;
 
   p {
+    max-width: 800px;
+    min-width: 300px;
+  }
+
+  @media (max-width: 780px) {
     width: 80vw;
-    margin-left: 50px;
   }
 `;
 
