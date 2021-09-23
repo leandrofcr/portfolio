@@ -6,10 +6,10 @@ import { HiOutlineExternalLink } from 'react-icons/hi';
 import projects from '../../content/projects';
 
 const StyledSectionWrapper = styled.section`
-  width: 80vw;
+  width: 60vw;
   text-align: center;
   margin: 50vh 0;
-  
+
   a {
     text-decoration: none;
     margin: 0 10px;
@@ -28,7 +28,7 @@ const StyledSectionWrapper = styled.section`
 const StyledCard = styled.section`
   display: flex;
   align-items: center;
-  margin-top: 30px;
+  margin-top: 15px 0;
 
   &:nth-child(odd) {
     flex-direction: row-reverse;
@@ -38,7 +38,7 @@ const StyledCard = styled.section`
     @media (max-width: 1024px) {
       flex-direction: column;
       align-items: center;
-      margin-top: 50px
+      margin-top: 50px;
     }
   }
 
@@ -60,6 +60,7 @@ const StyledCard = styled.section`
   section {
     position: relative;
     min-width: 300px;
+    max-width: 500px;
     text-align: left;
     padding: 5px 20px;
     border-radius: 5px;
@@ -85,7 +86,7 @@ const StyledCard = styled.section`
   p {
     /* min-width: 400px; */
     padding: 0 5px;
-    text-align:justify;
+    text-align: justify;
   }
 
   @media (max-width: 1024px) {
