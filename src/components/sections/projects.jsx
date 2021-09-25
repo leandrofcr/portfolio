@@ -23,6 +23,12 @@ const StyledSectionWrapper = styled.section`
       --d: 100%;
     }
   }
+  section a {
+    text-decoration: none;
+    &:hover {
+      --d: 0
+      }
+  }
 `;
 
 const StyledCard = styled.section`
@@ -115,7 +121,9 @@ function Projects() {
           data-aos="fade-up"
           data-aos-delay={i === 0 ? 0 : i * 100}
         >
-          <img src={pr.image} alt={` The ${pr.name} project`} />
+          <a href={pr.url} target="_blank" rel="noreferrer">
+            <img src={pr.image} alt={` The ${pr.name} project`} />
+          </a>
           <section>
             {pr.name}
             <p>
