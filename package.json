@@ -1,6 +1,6 @@
 {
   "name": "react-portfolio",
-  "homepage": "https://leandrofcr.github.io/portfolio",
+  "homepage": "https://leandrofcr.vercel.app/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
