@@ -17,10 +17,10 @@ const projects = [
   },
 
   {
-    name: 'Online Shopp',
+    name: 'Online Store',
     description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro culpa quasi expedita fugiat, maiores vero neque consectetur, similique tempora ipsam iusto amet quisquam possimus adipisci doloribus eveniet tenetur autem aperiam! Lorem ipsum dolor sit amet consectetur adipisicing elit. ',
     image: onlineShop,
-    url: 'https://github.com/leandrofcr',
+    url: 'https://github.com/leandrofcr/online-store',
     tags: ['React', 'Redux', 'RTL'],
   },
 ];
