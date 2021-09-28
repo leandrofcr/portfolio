@@ -117,11 +117,10 @@ function Projects() {
     <StyledSectionWrapper>
       <h2 id="projects">Some Things I&apos;ve Built</h2>
 
-      <p>
+      {/* <p>
         All available on my page on
         <a href="https://github.com/leandrofcr" target="_blank" rel="noreferrer">github</a>
-
-      </p>
+      </p> */}
       {projects.map((pr, i) => (
         <StyledCard
           key={pr.name}
@@ -149,7 +148,7 @@ function Projects() {
         </StyledCard>
       ))}
       <a href="https://github.com/leandrofcr" target="_blank" rel="noreferrer">
-        See more
+        See more on my Github
         {' '}
         <HiOutlineExternalLink />
       </a>

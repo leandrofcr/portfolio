@@ -5,7 +5,7 @@ const FooterWrapper = styled.footer`
   font-size: 12px;
   color: #707881;
   padding: 20px;
-  margin-top: 100px;
+  margin-top: 50px;
 
   a {
     text-decoration: none;
@@ -15,6 +15,9 @@ const FooterWrapper = styled.footer`
       color: #efb357;
     }
   }
+  @media (max-width: 1100px) {
+    margin-top: 130px;
+ }
 `;
 
 function Footer() {

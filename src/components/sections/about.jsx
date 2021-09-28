@@ -138,7 +138,7 @@ function About() {
           </p>
 
           <p>
-            I&apos;m currently delving a little deeper into the back end at
+            I&apos;m currently diving a little deeper into the back end at
             Trybe, where I have the privilege to carry out several front end and
             back end projects. Always using very current technologies. My main
             focus these days is to
