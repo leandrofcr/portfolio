@@ -6,7 +6,7 @@ import { HiOutlineExternalLink } from 'react-icons/hi';
 import projects from '../../content/projects';
 
 const StyledSectionWrapper = styled.section`
-  width: 60vw;
+  min-width: 60vw;
   text-align: center;
   margin: 50vh 0;
 
@@ -29,6 +29,7 @@ const StyledSectionWrapper = styled.section`
       --d: 0
       }
   }
+
 `;
 
 const StyledCard = styled.section`
@@ -82,7 +83,7 @@ const StyledCard = styled.section`
 
   code {
     display: inline-block;
-    margin: 20px 10px;
+    margin: 7px 10px;
     color: #707881;
     background-color: #29313d;
     padding: 0 10px;
@@ -115,6 +116,12 @@ function Projects() {
   return (
     <StyledSectionWrapper>
       <h2 id="projects">Some Things I&apos;ve Built</h2>
+
+      <p>
+        All available on my page on
+        <a href="https://github.com/leandrofcr" target="_blank" rel="noreferrer">github</a>
+
+      </p>
       {projects.map((pr, i) => (
         <StyledCard
           key={pr.name}
@@ -125,7 +132,11 @@ function Projects() {
             <img src={pr.image} alt={` The ${pr.name} project`} />
           </a>
           <section>
-            {pr.name}
+            <a href={pr.url} target="_blank" rel="noreferrer">
+              {pr.name}
+              {' '}
+              <HiOutlineExternalLink />
+            </a>
             <p>
               {pr.description}
               <div>

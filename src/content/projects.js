@@ -3,25 +3,25 @@ import { amongUs, onlineShop, triviaGame } from '../images';
 const projects = [
   {
     name: 'Among Us Timer',
-    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro culpa quasi expedita fugiat, maiores vero neque consectetur, similique tempora ipsam iusto amet quisquam possimus adipisci doloribus eveniet tenetur autem aperiam! Lorem ipsum dolor sit amet consectetur adipisicing elit. ',
+    description: 'This project is a themed timer based on the Among us game, developed with React and styled to bring a similar immersion to the game. ',
     image: amongUs,
     url: 'https://leandrofcr.github.io/among-us-timer/',
-    tags: ['React', 'Redux', 'RTL'],
+    tags: ['React', 'JavaScript', 'CSS3'],
   },
   {
     name: 'Trivia Game',
-    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro culpa quasi expedita fugiat, maiores vero neque consectetur, similique tempora ipsam iusto amet quisquam possimus adipisci doloribus eveniet tenetur autem aperiam! Lorem ipsum dolor sit amet consectetur adipisicing elit. ',
+    description: 'The Trivia Game project is a quiz game based on a quiz game using React and Redux, developed its functionalities according to the demands defined in a Kanban board.',
     image: triviaGame,
     url: 'https://leandrofcr.github.io/trivia-game/',
-    tags: ['React', 'Redux', 'RTL'],
+    tags: ['React', 'Redux', 'JavaScript', 'CSS3', 'react-spring'],
   },
 
   {
     name: 'Online Store',
-    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro culpa quasi expedita fugiat, maiores vero neque consectetur, similique tempora ipsam iusto amet quisquam possimus adipisci doloribus eveniet tenetur autem aperiam! Lorem ipsum dolor sit amet consectetur adipisicing elit. ',
+    description: 'In this project, a simplified version was created, without persistence in the database, of an online store, according to the demands defined in a Kanban board, in a scenario closer to the labor market.',
     image: onlineShop,
     url: 'https://github.com/leandrofcr/online-store',
-    tags: ['React', 'Redux', 'RTL'],
+    tags: ['React', 'JavaScript', 'MercadoLivre API'],
   },
 ];
 
