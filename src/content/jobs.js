@@ -5,11 +5,13 @@ const jobs = [
     period: 'july 2014 - february 2021',
     url: 'https://www7.fiemg.com.br/cit/area-de-atuacao/automotiva',
     description: [
-      'Elaboration and critical analysis of reports regarding the test of vehicle emissions',
-      'Preparation and monitoring of engine tests for development and parameterization',
-      'Scheduling automated tests',
-      'Update and improvement in equipment and processes aimed at quality and productivity',
-      'Performance in the process of implantation and management of the quality system and continuous improvement',
+      'Automated testing scheduling;',
+      'Detailing of components in 3D modeling;',
+      'Preparation and analysis of criticism;',
+      'Preparation of procedures;',
+      'Certificate review;',
+      'Implementation of the quality system and continuous improvement.',
+      'Preparation and monitoring of engine tests for development and parameterization;',
     ],
   },
   {
