@@ -1,5 +1,7 @@
 ## Personal Portfolio  - Work in progress
 
+This is my personal portfolio, where you can find some information about me and the projects I've created.
+
 
 ##  Instructions
 
