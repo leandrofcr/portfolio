@@ -15,7 +15,7 @@ const projects = [
   },
   {
     name: 'Cookmaster API',
-    description: 'Cookmaster is a API for registration and search of recipes, using JWT, Multer, MSC and REST architecture.',
+    description: 'Cookmaster is an API for registration and search of recipes, using JWT, Multer, MSC and REST architecture.',
     image: cookmaster,
     url: 'https://github.com/leandrofcr/cookmaster-api',
     tags: ['Node.js', 'API REST', 'JWT', 'Express.js', 'MSC'],
