@@ -123,13 +123,13 @@ function Welcome() {
         </div>
 
         <p data-aos="fade-up" data-aos-delay="1600">
-          Software development student, excited about programming since I got my
+          Software developer excited about programming since I got my
           first computer. Graduated in Mechanical Engineering, where my passion
           for technology made me pivot my career and seek new challenges in the
-          area of software development. Currently studying web development at
+          area of software development. Currently creating cool stuff at
           {' '}
           <span>
-            <a href="https://www.betrybe.com/">Trybe</a>
+            <a href="https://www.digitalrepublic.com.br">Digital Republic</a>
           </span>
           {' '}
           :D
